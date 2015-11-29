@@ -5,7 +5,8 @@ Connector to API of Unicredit Bank - for Common Banking Tasks
 *Note: Contact me if you need help. I programmed the Unicredit API as well as this library.*
 
 The internet banking of Unicredit offers the possibility to connect to its API 
-from an external program and perform usual banking tasks. The feature is called [BusinessNet Connect](http://www.unicreditbank.sk/sk/Firmy/Cash-management/Elektronicke-bankovnictvo/Businessnet-professional) and is available in Unicredit SK, CZ, SI, UA, RO and RU. The feature is not publicly offered in all of the countries however the bank provides it if you ask for it. 
+from an external program and perform usual banking tasks. The feature is called [BusinessNet Connect](http://www.unicreditbank.sk/sk/Firmy/Cash-management/Elektronicke-bankovnictvo/Businessnet-professional) and is available in Unicredit SK, CZ, SI, UA, RO and RU.
+The feature may be not publicly offered in all countries however the bank may provide it on your request. Countries with official support and documentation: SK, CZ.
 
 This library was tested against Unicredit SK.
 
@@ -63,7 +64,7 @@ Note: The payment history contains list of transactions since one day before the
 Usage
 =======
 
-See examples of the usage in `Example.java` file ([here](/src/test/java/com/newpecunia/unicredit/Example.java)).
+See examples of the usage in `Example.java` file ([here](https://github.com/petrsmid/unicredit-connector/blob/master/src/test/java/com/newpecunia/unicredit/Example.java)).
 
 The Payment
 ----------------
@@ -77,7 +78,7 @@ The Payment
 	//Pay!
 	connector.uploadForeignPaymentPackage("ref_12345", payment);
 
-What happens under the cover: The connector creates a package file with one payment. The file would be named TODO. The file is signed by PGP and uploaded into the webdav folder.
+What happens under the cover: The connector creates a package file with one payment. The file would be named yyyy-MM-dd_HH-mm-ss_ref_12345.csv. The file is signed by PGP and uploaded into the webdav folder.
 
 
 The Ballance
@@ -91,7 +92,7 @@ The Ballance
 
 What happens under the cover: The connector reads balance from the last statement file. This is because of historical reasons, nowadays it would be probably easier to read it from `/balances`. (Feel free to fix it.) 
 
-The information is not up to date (it is one day behind). If you need realtime information please perform the fix described above or purchase the service [MT942] provided by the Unicredit and read the data from the "realtime" file.
+The information is not up to date (it is one day behind). If you need realtime information please perform the fix described above or purchase the service [MT942](http://www.unicreditbank.sk/sk/Firmy/Cash-management/Elektronicke-bankovnictvo/Businessnet-professional) provided by the Unicredit and read the data from the "realtime" file.
 
 
 
