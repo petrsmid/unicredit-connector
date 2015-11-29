@@ -2,21 +2,23 @@
 Connector to API of Unicredit Bank - for Common Banking Tasks
 =============================================================
 
-*Note: Contact me if you need help. I programmed the Unicredit API as well as this library.*
+*Note: Contact me if you need help. I programmed both sides - the Unicredit API as well as this library.*
 
 The internet banking of Unicredit offers the possibility to connect to its API 
-from an external program and perform usual banking tasks. The feature is called [BusinessNet Connect](http://www.unicreditbank.sk/sk/Firmy/Cash-management/Elektronicke-bankovnictvo/Businessnet-professional) and is available in Unicredit SK, CZ, SI, UA, RO and RU.
-The feature may be not publicly offered in all countries however the bank may provide it on your request. Countries with official support and documentation: SK, CZ.
+from an external program and perform usual banking tasks: send money, check actual balance, ...
+
+The API is called [BusinessNet Connect](http://www.unicreditbank.sk/sk/Firmy/Cash-management/Elektronicke-bankovnictvo/Businessnet-professional) and is available in Unicredit SK, CZ, SI, UA, RO and RU.
+(The feature may be not publicly offered in all countries however the bank may provide it on your request. Countries with official support and documentation: SK, CZ.)
 
 This library was tested against Unicredit SK.
 
 It provides API for:
 
  - payments (domestic payments, foreign payments, sepa, ...)
- - reading actual ballance
+ - reading actual balance
  - reading payment history
 
-This library supports payments and ballance. The payment history is not currently supported. (feel free to add the support)
+This library supports payments and balance. The payment history is not currently supported. (feel free to add the support)
 
 The Unicredit API
 =================
@@ -50,9 +52,9 @@ This library uses Multicash as it is the mostly supported format.
 Note: we tested this library against Unicredit SK. If you have account in different country you should check the supported formats. If the Multicash is not supported you can either contact
 me or add the support to this library yourself.
 
-Ballance
+Balance
 -----------
-The actual ballance is provided in files in directory `/balances`. However this library uses (because of historical reasons) the balance found in the last transaction of the payment history. Feel free to fix it.
+The actual balance is provided in files in directory `/balances`. However this library uses (because of historical reasons) the balance found in the last transaction of the payment history. Feel free to fix it.
 
 Payment History
 ---------------------
@@ -81,7 +83,7 @@ The Payment
 What happens under the cover: The connector creates a package file with one payment. The file would be named yyyy-MM-dd_HH-mm-ss_ref_12345.csv. The file is signed by PGP and uploaded into the webdav folder.
 
 
-The Ballance
+The Balance
 -------------------
 
 	//start the connector
