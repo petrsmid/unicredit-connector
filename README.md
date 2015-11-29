@@ -1,11 +1,11 @@
 ![enter image description here](https://www.unicreditbank.cz/web/img/content/logo-u/t_UCBk-3D.jpg)
-Connector to API of Unicredit Bank - for Common Banking Tasks
-=============================================================
+Connector to API of Unicredit Bank - for Common Banking Operations
+==================================================================
 
 *Note: Contact me if you need help. I programmed both sides - the Unicredit API as well as this library.*
 
 The internet banking of Unicredit offers the possibility to connect to its API 
-from an external program and perform usual banking tasks: send money, check actual balance, ...
+from an external program and perform usual banking operations: send money, check actual balance, ...
 
 The API is called [BusinessNet Connect](http://www.unicreditbank.sk/sk/Firmy/Cash-management/Elektronicke-bankovnictvo/Businessnet-professional) and is available in Unicredit SK, CZ, SI, UA, RO and RU.
 (The feature may be not publicly offered in all countries however the bank may provide it on your request. Countries with official support and documentation: SK, CZ.)
