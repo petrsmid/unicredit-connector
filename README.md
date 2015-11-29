@@ -1,8 +1,8 @@
 ![enter image description here](https://www.unicreditbank.cz/web/img/content/logo-u/t_UCBk-3D.jpg)
-Connector to Unicredit API for Common Banking Tasks
-============================================
+Connector to API of Unicredit Bank - for Common Banking Tasks
+=============================================================
 
-*Note: Contact me if you need help. I am the author of the Unicredit API as well as author of this library.*
+*Note: Contact me if you need help. I programmed the Unicredit API as well as this library.*
 
 The internet banking of Unicredit offers the possibility to connect to its API 
 from an external program and perform usual banking tasks. The feature is called [BusinessNet Connect](http://www.unicreditbank.sk/sk/Firmy/Cash-management/Elektronicke-bankovnictvo/Businessnet-professional) and is available in Unicredit SK, CZ, SI, UA, RO and RU. The feature is not publicly offered in all of the countries however the bank provides it if you ask for it. 
@@ -63,7 +63,7 @@ Note: The payment history contains list of transactions since one day before the
 Usage
 =======
 
-See examples of the usage in `Examples.java` file.
+See examples of the usage in `Example.java` file ([here](/src/test/java/com/newpecunia/unicredit/Example.java)).
 
 The Payment
 ----------------
@@ -75,7 +75,7 @@ The Payment
 	ForeignPayment payment = preparePayment(); 
 
 	//Pay!
-	connector.uploadForeignPaymentPackage("ref_12345", payment);		
+	connector.uploadForeignPaymentPackage("ref_12345", payment);
 
 What happens under the cover: The connector creates a package file with one payment. The file would be named TODO. The file is signed by PGP and uploaded into the webdav folder.
 
@@ -93,7 +93,6 @@ What happens under the cover: The connector reads balance from the last statemen
 
 The information is not up to date (it is one day behind). If you need realtime information please perform the fix described above or purchase the service [MT942] provided by the Unicredit and read the data from the "realtime" file.
 
-Configuration
------------------
 
-TODO - fix the code!!!
+
+
