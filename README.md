@@ -66,7 +66,7 @@ Note: The payment history contains list of transactions since one day before the
 Usage
 =======
 
-See examples of the usage in `Example.java` file ([here](https://github.com/petrsmid/unicredit-connector/blob/master/src/test/java/com/newpecunia/unicredit/Example.java)).
+See examples of the usage in [Example.java](https://github.com/petrsmid/unicredit-connector/blob/master/src/test/java/com/newpecunia/unicredit/Example.java).
 
 The Payment
 ----------------
@@ -74,7 +74,7 @@ The Payment
 	//start the connector
 	UnicreditConnector connector = buildConnector();
 		
-	//create payment
+	//create payment - set the account number (or IBAN), bank code (or SWIFT) etc. See examples in Example.java
 	ForeignPayment payment = preparePayment(); 
 
 	//Pay!
