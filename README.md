@@ -1,4 +1,4 @@
-![enter image description here](https://www.unicreditbank.cz/web/img/content/logo-u/t_UCBk-3D.jpg)
+![UnicreditBank Logo](https://www.unicreditbank.cz/etc/designs/cee2020-pws-cz/img/logos/logo_cz.png)
 Connector to API of Unicredit Bank - for Common Banking Operations
 ==================================================================
 
@@ -7,7 +7,7 @@ Connector to API of Unicredit Bank - for Common Banking Operations
 The internet banking of Unicredit offers the possibility to connect to its API 
 from an external program and perform usual banking operations: send money, check actual balance, ...
 
-The API is called [BusinessNet Connect](http://www.unicreditbank.sk/sk/Firmy/Cash-management/Elektronicke-bankovnictvo/Businessnet-professional) and is available in Unicredit SK, CZ, SI, UA, RO and RU.
+The API is called [BusinessNet Connect](https://www.unicreditbank.sk/sk/velke-firmy/cash-management/elektronicke-bankovnictvo.html#businessnet) and is available in Unicredit SK, CZ, SI, UA, RO and RU.
 (The feature may be not publicly offered in all countries however the bank may provide it on your request. Countries with official support and documentation: SK, CZ.)
 
 This library was tested against Unicredit SK.
@@ -23,9 +23,9 @@ This library supports payments and balance. The payment history is not currently
 The Unicredit API
 =================
 
-In order to use the Unicredit API one has to purchase this feature - see e.g. [here](http://www.unicreditbank.sk/sk/Firmy/Cash-management/Elektronicke-bankovnictvo/Businessnet-professional). It costs monthly around 8,- EUR. See the [price list](http://www.unicreditbank.sk/att/151087/14814_UCB_Cennik_SK_firmy_01072015_v2.pdf).
+In order to use the [Unicredit API](https://www.unicreditbank.sk/content/dam/cee2020-pws-sk/en-documents/cash-management/BusinessNet_Connect_Produktovy_list_EN.pdf) one has to purchase this feature. It costs monthly around 8,- EUR. See the [price list](https://www.unicreditbank.sk/content/dam/cee2020-pws-sk/sk-dokumenty/ostatne/cenniky/CENNIK_PODNIKATELIA_01082017_SK.pdf).
 
-For a detailed information please read the [technical document](https://www.unicreditbank.cz/files/download/electronic_banking/BusinessNet_Connect_Integration_document.pdf) provided by the Unicredit bank. Here we provide only a brief description.
+For a detailed information please read the [technical document](https://www.unicreditbank.cz/content/dam/cee2020-pws-cz/en-documents/cash-management/BusinessNet_Connect_Integration_document.pdf) provided by the Unicredit bank. Here we provide only a brief description.
 
 The Unicredit interface is a webdav folder (e.g. on address https://sk.unicreditbanking.net/webdav/) - one can mount it as a disk into Windows Explorer, mount it in Linux or open in [Total Commander](http://www.ghisler.com/) with [additional Webdav plugin](http://www.ghisler.com/plugins.htm) (this is the most reliable solution which I strongly recommend).
 
@@ -94,7 +94,7 @@ The Balance
 
 What happens under the cover: The connector reads balance from the last statement file. This is because of historical reasons, nowadays it would be probably easier to read it from `/balances`. (Feel free to fix it.) 
 
-The information is not up to date (it is one day behind). If you need realtime information please perform the fix described above or purchase the service [MT942](http://www.unicreditbank.sk/sk/Firmy/Cash-management/Elektronicke-bankovnictvo/Businessnet-professional) provided by the Unicredit and read the data from the "realtime" file.
+The information is not up to date (it is one day behind). If you need realtime information please perform the fix described above or purchase the service [MT942](https://www.unicreditbank.cz/content/dam/cee2020-pws-cz/cz-dokumenty/dokumenty-produkty/sazebniky/Sazebnik_Cor_CZ_04_2015.pdf) provided by the Unicredit and read the data from the "realtime" file.
 
 
 
