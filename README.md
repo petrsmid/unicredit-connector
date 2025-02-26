@@ -23,7 +23,7 @@ This library supports payments and balance. The payment history is not currently
 The Unicredit API
 =================
 
-In order to use the [Unicredit API](https://www.unicreditbank.sk/content/dam/cee2020-pws-sk/en-documents/cash-management/BusinessNet_Connect_Produktovy_list_EN.pdf) one has to purchase this feature. It costs monthly around 8,- EUR. See the [price list](https://www.unicreditbank.sk/content/dam/cee2020-pws-sk/sk-dokumenty/ostatne/cenniky/CENNIK_PODNIKATELIA_01082017_SK.pdf).
+Description of the product that enables the API: [Unicredit API](https://www.unicreditbank.sk/content/dam/cee2020-pws-sk/en-documents/cash-management/BusinessNet_Connect_Produktovy_list_EN.pdf).
 
 For a detailed information please read the [technical document](https://www.unicreditbank.cz/content/dam/cee2020-pws-cz/en-documents/cash-management/BusinessNet_Connect_Integration_document.pdf) provided by the Unicredit bank. Here we provide only a brief description.
 
