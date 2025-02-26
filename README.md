@@ -1,4 +1,4 @@
-![UnicreditBank Logo](https://www.unicreditbank.cz/etc/designs/cee2020-pws-cz/img/logos/logo_cz.png)
+![UnicreditBank Logo](logo.jpg)
 Connector to API of Unicredit Bank - for Common Banking Operations
 ==================================================================
 
